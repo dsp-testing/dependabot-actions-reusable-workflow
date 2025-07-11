@@ -8,3 +8,11 @@ jobs:
   call-config:
     uses: ./.github/workflows/configure-aws.yml
     secrets: inherit
+
+  reusable2:
+    uses: ./.github/workflows/reusable2.yml
+    secrets: inherit
+
+  reusable3:
+    uses: ./.github/workflows/reusable3.yml
+    secrets: inherit

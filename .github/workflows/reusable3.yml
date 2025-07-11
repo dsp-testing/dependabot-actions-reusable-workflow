@@ -1,0 +1,13 @@
+name: Configure AWS Workflow reusable 3
+
+on:
+  workflow_call:
+
+jobs:
+  aws-setup:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: aws-actions/configure-aws-credentials@ececac1a45f3b08a01d2dd070d28d111c5fe6722
+        with:
+          aws-region: us-east-1
+          role-to-assume: arn:aws:iam::123456789012:role/DemoRole
