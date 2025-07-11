@@ -1,0 +1,10 @@
+name: Call AWS Reusable Workflow
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  call-config:
+    uses: ./.github/workflows/reusable/configure-aws.yml
+    secrets: inherit
